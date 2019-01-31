@@ -50,7 +50,7 @@
 
       <section class="perforators">
         <ul class="perforators__navigation">
-          <li><a href="index.html"><span class="visually-hidden">Главная страница</span></a></li>
+          <li><a href="index.html" aria-label="Ссылка на главную страницу">Главная страница</a></li>
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Инструменты</a></li>
           <li><a href="#">Перфораторы</a></li>
@@ -60,21 +60,56 @@
 
       <section class="perforators__filters filters">
         <h2>Фильтр:</h2>
-        <form class="filters__filter filter">
+        <form class="filters__filter filter" method="get" action="https://echo.htmlacademy.ru">
           <b>Цена:</b>
           <div class="filre__range"></div>
           <b>Производители:</b>
           <ul>
-            <li>Bosch</li>
-            <li>Интерскол</li>
-            <li>Makita</li>
-            <li>Dewalt</li>
-            <li>Hitachi</li>
+            <li>
+              <label class="checkbox">
+                <input type="checkbox" name="Bosch" id="bosch" checked>
+                Bosch
+              </label>
+            </li>
+            <li>
+              <label class="checkbox">
+                <input type="checkbox" name="Интерскол" id="interskol">
+                Интерскол
+              </label>
+            </li>
+            <li>
+              <label class="checkbox">
+                <input type="checkbox" name="Makita" id="makita" checked>
+                Makita
+              </label>
+            </li>
+            <li>
+              <label class="checkbox">
+                <input type="checkbox" name="Dewalt" id="dewalt">
+                Dewalt
+              </label>
+            </li>
+            <li>
+              <label class="checkbox">
+                <input type="checkbox" name="Hitachi" id="hitachi">
+                Hitachi
+              </label>
+            </li>
           </ul>
           <b>Питание:</b>
           <ul>
-            <li>Аккумуляторные</li>
-            <li>Сетевые</li>
+            <li>
+              <label class="radio">
+                <input type="radio" name="nutrition" value="Rechargeable" id="Rechargeable" checked>
+                Аккумуляторные
+              </label>
+            </li>
+            <li>
+              <label class="radio">
+                <input type="radio" name="nutrition" value="Network" id="Network">
+                Сетевые
+              </label>
+            </li>
           </ul>
           <button type="submit">Показать</button>
         </form>
@@ -214,61 +249,60 @@
 
     <footer class="footer">
 
-      <div class="footer__top">
-        <div class="footer__container">
+      <div class="footer__footer-top footer-top">
+        <div class="footer-top__container">
           <a class="footer-top__logo" href="index.html">Техномарт</a>
-          <div class="footer__contacts">
+          <div class="footer-top__contacts">
             <p>г. Санкт-Петербург, ул. Б.</p>
             <p>+7 (812) 555-05-55</p>
           </div>
         </div>
-        <ul class="footer-navigation">
-          <li><a href="">Компания</a></li>
-          <li><a href="">Новости</a></li>
-          <li><a href="">Каталог</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>
-          <li><a href="">Материалы</a></li>
-          <li><a href="">Техника</a></li>
-          <li><a href="">Инструменты</a></li>
-          <li><a href="">Спецпредложения</a></li>
+        <ul class="footer-top__navigation navigation">
+          <li><a href="company.html">Компания</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="materials.html">Материалы</a></li>
+          <li><a href="equipment.html">Техника</a></li>
+          <li><a href="instruments.html">Инструменты</a></li>
+          <li><a href="specialOffers.html">Спецпредложения</a></li>
         </ul>
       </div>
 
-      <div class="footer__bottom">
-        <div class="footer__contacts">
+      <div class="footer__footer-bottom footer-bottom">
+        <div class="footer-bottom__contacts contacts">
           <b>© 2010–2019 Компания «Техномарт»</b>
           <p>Все права защищены</p>
         </div>
 
-        <div class="footer-social">
+        <div class="footer-bottom__social social">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
-          <ul class="footer-social-list">
+          <ul class="social__list">
             <li>
-              <a class="button-social" href=""><span class="visually-hidden">Вконтакте</span></a>
+              <a class="social__button" href="" aria-label="Ссылка на нас во ВКонтакте">ВКонтакте</a>
             </li>
             <li>
-              <a class="button-social" href=""><span class="visually-hidden">Фейсбук</span></a>
+              <a class="social__button" href="" aria-label="Ссылка на нас в Фейсбуке">Фейсбук</a>
             </li>
             <li>
-              <a class="button-social" href=""><span class="visually-hidden">Инстаграм</span></a>
+              <a class="social__button" href="" aria-label="Ссылка на нас в Инстаграме">Инстаграм</a>
             </li>
           </ul>
         </div>
 
-        <div class="copyright">
+        <div class="footer-bottom__copyright copyright">
           <div>
             <p>Обратная связь:</p>
-            <a href="#">mail@htmlacademy.ru</a>
+            <a href="#" aria-label="e-mail адрес для связи с нами">mail@htmlacademy.ru</a>
           </div>
           <div>
             <p>Разработано -</p>
-            <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/" aria-label="Адрес разработчика нашего сайта">htmlacademy.ru</a>
           </div>
         </div>
 
       </div>
-
     </footer>
 
     <section class="modal-basket basket">
@@ -277,7 +311,7 @@
         <a class="button" href="#">Оформить заказ</a>
         <a class="button" href="#">Продолжить покупки</a>
       </div>
-      <button class="button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <button class="button-close" type="button" aria-label="Закрыть всплывающее окно">Закрыть</button>
     </section>
 
   </body>
