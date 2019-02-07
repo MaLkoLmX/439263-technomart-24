@@ -74,6 +74,20 @@ a {
   color: #ffffff;
 }
 
+.order {
+  background-color: #63a63e;
+}
+
+.menu__search {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+
+  border: none;
+}
+
 .user {
   display: flex;
   flex-wrap: wrap;
@@ -157,6 +171,17 @@ a {
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
+}
+
+.site-silt__link:hover,
+.site-silt__link:focus {
+  background-color: #293449;
+}
+
+.site-silt__link:active {
+  color: #93969c;
+
+  background-color: #1d2739;
 }
 
 .offers {
@@ -275,11 +300,11 @@ a {
   background-position: 200px 30px;
 }
 
-.products__title,
-.manufacturers__title {
+.popular-title {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
+  text-transform: uppercase;
 }
 
 .products__button,
@@ -381,6 +406,7 @@ a {
   font-size: 36px;
   line-height: 24px;
   color: #32425c;
+  text-transform: uppercase;
 }
 
 .services__description,
@@ -679,7 +705,22 @@ a {
 .sorting__link {
   font-size: 13px;
   line-height: 18px;
+  color: #dadada;
+
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sorting__link:focus,
+.sorting__link:hover {
+  color: #000000;
+
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting__link:active {
   color: #ee3643;
+
+  border: none;
 }
 
 .catalog__list {
@@ -702,6 +743,15 @@ a {
   color: #ffffff;
 
   background-color: #63a63e;
+}
+
+.catalog-bookmark {
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+
+  background-color: #ffffff;
+  border: 3px solid #63a63e;
 }
 
 .catalog__pagination {
