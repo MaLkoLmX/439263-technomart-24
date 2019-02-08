@@ -58,8 +58,9 @@ a {
 }
 
 .menu {
+  display: flex;
+  justify-content: center;
   background-color: #293449;
-  text-align: center;
 }
 
 .menu__logo {
@@ -86,6 +87,10 @@ a {
   background-color: #293449;
 
   border: none;
+}
+
+.menu__search:active {
+  background-color: #ffffff;
 }
 
 .user {
@@ -262,6 +267,7 @@ a {
 .slider__title {
   font-size: 36px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .slider__description {
@@ -393,12 +399,18 @@ a {
   background-color: #f4f8f9;
 }
 
+.services__columns {
+  width: 940px;
+  margin: 0 auto;
+}
+
 .services__title {
   margin-left: 130px;
 
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .slider-service__title {
@@ -466,13 +478,15 @@ a {
 
 .page-main__wrapper {
   display: flex;
-  margin-left: 130px;
+  margin: 0 auto;
+  width: 940px;
 }
 
 .aboutUs__title {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .aboutUs__description {
@@ -520,6 +534,7 @@ a {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .contacts__description {
@@ -585,7 +600,7 @@ a {
 .social__list {
   display: flex;
   justify-content: center;
-  width: 133px;
+  width: 140px;
 
   list-style: none;
 }
@@ -606,6 +621,11 @@ a {
   color: #ffd180;
 }
 
+.catalog-columns {
+  width: 940px;
+  margin: 0 auto;
+}
+
 .perforators-filter__nav {
   display: flex;
   margin-left: 130px;
@@ -617,6 +637,7 @@ a {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .perforators-filter__title {
@@ -626,12 +647,13 @@ a {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
+  text-transform: uppercase;
 
   background-color: #f2f6f8;
 }
 
 .filters {
-  margin-left: 130px;
+  width: 220px;
 }
 
 .filters__title {
@@ -723,9 +745,14 @@ a {
   border: none;
 }
 
+.catalog {
+  width: 700px;
+}
+
 .catalog__list {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .catalog__item {
@@ -756,6 +783,7 @@ a {
 
 .catalog__pagination {
   display: flex;
+  padding: 0;
 
   list-style: none;
 }
@@ -776,6 +804,7 @@ a {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .about-perforators__description {
