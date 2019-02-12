@@ -252,14 +252,14 @@ a {
   width: 264px;
   margin: 0;
   margin-bottom: 5px;
-  padding: 10px 0;
+  padding: 8px 0;
 
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
   text-align: center;
 
-  outline: 3px solid #ffffff;
+  border: 3px solid #ffffff;
 }
 
 .main__address {
@@ -1262,7 +1262,7 @@ a {
   color: #32425c;
 
   background-color: #ffffff;
-  outline: 3px solid #63a63e;
+  border: 3px solid #63a63e;
 }
 
 .catalog-bookmark:focus,
@@ -1275,7 +1275,7 @@ a {
 .catalog-bookmark:active {
   color: #d0d2d6;
 
-  background-color: #c1c6ce;
+  border-color: #c1c6ce;
 }
 
 .catalog__pagination {
