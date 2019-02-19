@@ -119,13 +119,13 @@ a {
 .menu__item {
   padding: 13px 0;
   padding-left: 48px;
-  padding-right: 27px;
+  padding-right: 30px;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 
   background-repeat: no-repeat;
-  background-position: 16px 12px;
+  background-position: 19px 12px;
 }
 
 .marks {
@@ -194,7 +194,7 @@ a {
   background-color: #293449;
   background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
-  background-position: 7px 12px;
+  background-position: 11px 12px;
 
   border: none;
 }
@@ -413,7 +413,7 @@ input[type=search] {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 23px;
 
   list-style: none;
   box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
@@ -421,7 +421,7 @@ input[type=search] {
 
 .site-list__link {
   display: block;
-  padding: 22px 30px;
+  padding: 21px 30px;
 
   font-size: 17px;
   line-height: 17px;
@@ -473,7 +473,7 @@ input[type=search] {
 
 .offers__title {
   margin: 0;
-  margin-left: 25px;
+  margin-left: 24px;
   margin-bottom: 9px;
 
   font-size: 24px;
@@ -511,7 +511,7 @@ input[type=search] {
   background-color: #3bbce3;
   background-image: url(../img/icon-instruments.svg);
   background-repeat: no-repeat;
-  background-position: 200px 30px;
+  background-position: 197px 33px;
 }
 
 .slides {
@@ -529,8 +529,8 @@ input[type=search] {
 .drills__wrapper,
 .perforators__wrapper {
   position: absolute;
-  margin-top: 20px;
-  margin-left: 27px;
+  margin-top: 24px;
+  margin-left: 25px;
 }
 
 .slides:target {
@@ -605,7 +605,7 @@ input[type=search] {
   background-color: #dc91d8;
   background-image: url(../img/icon-equipment.svg);
   background-repeat: no-repeat;
-  background-position: 200px 30px;
+  background-position: 191px 30px;
 }
 
 .discounts {
@@ -621,17 +621,17 @@ input[type=search] {
   background-color: #ffc047;
   background-image: url(../img/icon-delivery.svg);
   background-repeat: no-repeat;
-  background-position: 200px 30px;
+  background-position: 191px 32px;
 }
 
 .popular-title {
-  display: inline-block;
   margin: 30px 30px;
 
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .products {
@@ -640,8 +640,7 @@ input[type=search] {
 
 .products__button,
 .manufacturers__button {
-  display: inline-block;
-  margin-left: 320px;
+  margin: 27px 24px;
   width: 253px;
 }
 
@@ -650,6 +649,8 @@ input[type=search] {
 }
 
 .products__wrapper {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 20px;
   width: 940px;
@@ -701,7 +702,7 @@ input[type=search] {
   margin: 0 auto;
   margin-bottom: 11px;
 
-  font-size: 18px;
+  font-size: 19px;
   line-height: 20px;
   color: #000000;
 }
@@ -739,7 +740,7 @@ input[type=search] {
   content: "";
   position: absolute;
   top: 0;
-  right: -20px;
+  right: -23px;
   width: 0;
   height: 0;
 
@@ -767,6 +768,8 @@ input[type=search] {
 }
 
 .manufacturers__wrapper {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 20px;
   width: 940px;
@@ -848,7 +851,7 @@ input[type=search] {
   width: 400px;
   margin: 0;
 
-  font-size: 13px;
+  font-size: 14px;
   line-height: 24px;
   color: #000000;
 }
@@ -883,11 +886,11 @@ input[type=search] {
 }
 
 .slider-service__description--delivery {
-  width: 249px;
+  width: 268px;
 }
 
 .slider-service__description--warranty {
-  width: 340px;
+  width: 366px;
 }
 
 .slider-service__description--credit {
@@ -1072,7 +1075,7 @@ input[type=search] {
 
 .footer-top__contacts {
   margin: 0;
-  margin-top: 27px;
+  margin-top: 23px;
 
   font-size: 18px;
   line-height: 24px;
@@ -1093,7 +1096,7 @@ input[type=search] {
 }
 
 .nav__item {
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 
 .nav__link {
@@ -1116,6 +1119,8 @@ input[type=search] {
 }
 
 .nav__link--yellow {
+  margin-left: 54px;
+
   color: #ffd180;
 }
 
@@ -1168,6 +1173,7 @@ input[type=search] {
 
 .copyright {
   display: flex;
+  margin-right: 12px;
 }
 
 .copyright__wrapper {
@@ -1215,7 +1221,7 @@ input[type=search] {
 .perforators__nav {
   display: flex;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
   padding: 0;
 
   list-style: none;
@@ -1393,7 +1399,8 @@ input[type=search] {
 }
 
 .filters__field--nutrition {
-  margin-bottom: 74px;
+  margin-bottom: 61px;
+
   border: none;
 }
 
@@ -1406,15 +1413,78 @@ input[type=search] {
 }
 
 .filters__items {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   cursor: pointer;
 }
 
-.checkbox,
-.radio {
+.label-checkbox,
+.label-radio {
   font-size: 15px;
   line-height: 20px;
   color: #000000;
+}
+
+.checkbox {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  margin-left: -35px;
+
+  background-image: url("../img/icon-checkbox-off.svg");
+}
+
+.input-checkbox:checked + .checkbox {
+  background-image: url("../img/icon-checkbox-on.svg");
+}
+
+.input-checkbox:focus:not(:disabled) + .checkbox,
+.input-checkbox:hover:not(:disabled) + .checkbox {
+  background-image: url("../img/icon-checkbox-off--focus.svg");
+}
+
+.input-checkbox:focus:not(:disabled) + .checkbox {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.input-checkbox:checked:focus:not(:disabled) + .checkbox,
+.input-checkbox:checked:hover:not(:disabled) + .checkbox {
+  background-image: url("../img/icon-checkbox-on--focus.svg");
+}
+
+.input-radio:disabled + .radio,
+.input-checkbox:disabled + .checkbox {
+  opacity: 0.3;
+}
+
+.radio {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-left: -35px;
+
+  background-image: url("../img/icon-radio-off.svg");
+}
+
+.input-radio:checked + .radio {
+  background-image: url("../img/icon-radio-on.svg");
+}
+
+.input-radio:focus:not(:disabled) + .radio,
+.input-radio:hover:not(:disabled) + .radio {
+  background-image: url("../img/icon-radio-off--focus.svg");
+}
+
+.input-radio:focus:not(:disabled) + .radio {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.input-radio:checked:focus:not(:disabled) + .radio,
+.input-radio:checked:hover:not(:disabled) + .radio {
+  background-image: url("../img/icon-radio-on--focus.svg");
 }
 
 .filters__button {
@@ -1453,6 +1523,7 @@ input[type=search] {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .sorting__type {
@@ -1470,6 +1541,7 @@ input[type=search] {
   font-size: 13px;
   line-height: 18px;
   color: #dadada;
+  text-transform: uppercase;
 
   border-bottom: 1px dotted #ee3643;
 }
@@ -1480,7 +1552,7 @@ input[type=search] {
 }
 
 .sorting__link--current {
-  margin-left: 44px;
+  margin-left: 47px;
 }
 
 .arrow {
@@ -1673,6 +1745,7 @@ input[type=search] {
 }
 
 .about-perforators {
+  width: 100%;
   padding-top: 65px;
   padding-bottom: 68px;
   background-color: #f2f6f8;
