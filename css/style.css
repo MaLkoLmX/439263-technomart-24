@@ -223,7 +223,6 @@ input[type=search] {
 }
 
 .user {
-  display: inline-block;
   width: 300px;
 }
 
@@ -365,6 +364,7 @@ input[type=search] {
   line-height: 21px;
   color: #000000;
   text-align: center;
+  vertical-align: middle;
 
   background-color: #ffffff;
 }
@@ -1357,6 +1357,7 @@ input[type=search] {
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .range__price-max {
@@ -1422,6 +1423,8 @@ input[type=search] {
   font-size: 15px;
   line-height: 20px;
   color: #000000;
+
+  cursor: pointer;
 }
 
 .checkbox {
@@ -1745,7 +1748,6 @@ input[type=search] {
 }
 
 .about-perforators {
-  width: 100%;
   padding-top: 65px;
   padding-bottom: 68px;
   background-color: #f2f6f8;
@@ -1798,8 +1800,9 @@ input[type=search] {
 .modal__form-field {
   display: inline-block;
   margin: 0;
-
   width: 220px;
+
+  vertical-align: middle;
 }
 
 .modal__form-field:nth-child(1) {
@@ -1901,6 +1904,8 @@ input[type=search] {
 
   border-top: 7px solid #ff5257;
   box-sizing: border-box;
+
+  z-index: 50;
 }
 
 .add__actions {
@@ -1927,8 +1932,9 @@ input[type=search] {
 
 .add__button {
   display: inline-block;
-
   width: 220px;
+
+  vertical-align: middle;
 }
 
 .add__button--current {
