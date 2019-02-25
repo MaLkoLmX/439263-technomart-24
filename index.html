@@ -266,8 +266,9 @@
         <section class="contacts">
           <h2 class="contacts__title">Контакты</h2>
           <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис:</p>
-          <div class="contacnts__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1548588185081" width="300" height="158" frameborder="0" style="border:0" allowfullscreen aria-label="Адрес нашего офиса на карте"></iframe>
+          <div class="contacts__map">
+<!--             <iframe class="contacts__modal-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1548588185081" width="300" height="158" frameborder="0" style="border:0" allowfullscreen aria-label="Адрес нашего офиса на карте"></iframe> -->
+            <img class="contacts__map-modal" src="img/map.jpg" width="300" height="158" alt="Карта нашего офиса">
           </div>
           <a class="contacts__button button" href="#">Заблудились? Напишите нам!</a>
         </section>
@@ -372,7 +373,7 @@
       </div>
     </footer>
 
-    <section class="modal-form">
+    <section class="modal modal__form">
       <h2 class="visually-hidden">Напишите нам</h2>
 
       <form class="modal-contact-us" action="https://echo.htmlacademy.ru" method="post">
@@ -401,10 +402,12 @@
       <button class="modal__form-close button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
-    <section class="modal__map">
+    <section class="modal modal__map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/map.jpg" width="940" height="446" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.396461306528!2d30.323083!3d59.938794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1551118145960" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
         <button class="modal__map-close button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>
