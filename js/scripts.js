@@ -81,12 +81,25 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-var addItem = document.querySelector(".catalog-button");
+var addItem = document.querySelectorAll(".catalog-button");
 var add = document.querySelector(".modal-add");
-
-console.log(addItem);
+var addClose = document.querySelector(".add__close");
 
 addItem.addEventListener("click", function (evt) {
   evt.preventDefault();
   add.classList.add("modal__show");
+});
+
+addClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  add.classList.remove("modal__show");
+});
+
+window.addEventListener("keydown", function (evt) {
+  evt.preventDefault();
+  if (evt.keyCode === 27) {
+    if (add.classList.contains("modal__show")) {
+      add.classList.remove("modal__show");
+    }
+  }
 });
