@@ -7,6 +7,10 @@ var email = popup.querySelector("[name=email]");
 var text = popup.querySelector("[name=text]");
 var form = popup.querySelector("form");
 
+var addItem = document.querySelectorAll(".catalog-button");
+var add = document.querySelector(".modal-add");
+var addClose = document.querySelector(".add__close");
+
 var isStorageSupport = true;
 var storage = "";
 
@@ -81,13 +85,13 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-var addItem = document.querySelectorAll(".catalog-button");
-var add = document.querySelector(".modal-add");
-var addClose = document.querySelector(".add__close");
 
-addItem.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  add.classList.add("modal__show");
+/*-------------------Добавления в корзину-------------------*/
+addItem.forEach(function(addItem) {
+  addItem.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    add.classList.add("modal__show");
+  });
 });
 
 addClose.addEventListener("click", function (evt) {
