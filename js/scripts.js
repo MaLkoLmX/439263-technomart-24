@@ -79,27 +79,3 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-
-
-/*var mapLink = document.querySelector(".contacts__map-modal");
-var map = document.querySelector(".modal__map");
-var mapClose = map.querySelector(".modal__map-close");
-
-mapLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  map.classList.add("modal__show-map");
-});
-
-mapClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  map.classList.remove("modal__show-map");
-});
-
-window.addEventListener("keydown", function (evt) {
-  evt.preventDefault();
-  if (evt.keyCode === 27) {
-    if (map.classList.contains("modal__show-map")) {
-      map.classList.remove("modal__show-map");
-    }
-  }
-});*/
