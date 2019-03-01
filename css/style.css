@@ -49,6 +49,7 @@ a {
 
   background-color: #ee3643;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .button:focus,
@@ -2050,6 +2051,8 @@ input[type=search] {
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
+
+  cursor: pointer;
 }
 
 .modal__map {
