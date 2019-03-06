@@ -28,13 +28,35 @@
           <a class="main__tell" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="main__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <div class="main__user user user--catalog">
-          <a class="user__user" href="#">Равшан Джамшутович</a>
-          <div class="user__wrapper">
-            <a class="user__link user__link--point" href="#">Мои заказы</a>
-            <a class="user__link" href="#">Личный кабинет</a>
-          </div>
-        </div>
+
+        <ul class="main__user user-navigation">
+          <li class="user-navigation__link user-navigation__link--unauthorized">
+            <a class="user__button login" href="#">Войти</a>
+          </li>
+          <li class="user-navigation__link user-navigation__link--unauthorized">
+            <a class="user__button checkIn" href="#">Регистрация</a>
+          </li>
+          <li class="user-navigation__link">
+            <a class="user__user" href="#">Равшан Джамшутович</a>
+          </li>
+          <li class="user-navigation__link">
+            <a class="user__logout" href="#">
+              <span class="visually-hidden">Выйти из профиля</span>
+              <svg width="20" height="17">
+                <g class="logout-icon" fill="#c5c5c5">
+                  <polygon points="21 8.5 12.125 0 12.125 6 6.125 6 6.125 11 12.125 11 12.125 17"/>
+                  <path d="M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027   v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z"/>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="user-navigation__link">
+            <a class="user__link" href="#">Мои заказы</a>
+          </li>
+          <li class="user-navigation__link">
+            <a class="user__link user__link--point" href="#">Личный кабинет</a>
+          </li>
+        </ul>
       </div>
 
       <nav class="navigation">
