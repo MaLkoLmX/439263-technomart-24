@@ -33,7 +33,7 @@
             <a class="user__button login" href="#">Войти</a>
           </li>
           <li class="user-navigation__link">
-            <a class="user__button checkIn" href="#">Регистрация</a>
+            <a class="user__button check-in" href="#">Регистрация</a>
           </li>
           <li class="user-navigation__link--authorized">
             <a class="user__user" href="#">Равшан Джамшутович</a>
@@ -97,7 +97,7 @@
               </section>
 
               <section class="offers__item instruments">
-                <h3 class="offers__title">Инструменты</h3>
+                <h3 class="offers__title">Инструмент</h3>
                 <a class="offers__item-button button" href="#">На все случаи</a>
               </section>
             </div>
@@ -239,13 +239,13 @@
       <section class="services">
         <div class="services__columns">
           <h2 class="services__title">Сервисы</h2>
-          <p class="services__description">Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <p class="services__description">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
           <div class="services__slider-service slider-service">
             <div class="slider-service__wrapper">
-              <input type="radio" id="delivery" name="button" checked>
-              <input type="radio" id="warranty" name="button">
-              <input type="radio" id="credit" name="button">
+              <input class="slider-service__delivery" type="radio" id="delivery" name="button" checked>
+              <input class="slider-service__warranty" type="radio" id="warranty" name="button">
+              <input class="slider-service__credit" type="radio" id="credit" name="button">
 
               <div class="slider-service__control">
                 <label class="slider-service__button" for="delivery">Доставка</label>
@@ -274,17 +274,17 @@
       </section>
 
       <div class="page-main__wrapper">
-        <section class="aboutUs">
+        <section class="about-us">
           <h2 class="visually-hidden">О нас:</h2>
-          <b class="aboutUs__title">КОМПАНИЯ «Техномарт»</b>
-          <p class="aboutUs__description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p class="aboutUs__description aboutUs__description--second">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
-          <ul class="aboutUs__list">
-            <li class="aboutUs__item">Деловые линии</li>
-            <li class="aboutUs__item">Автотрейдинг</li>
-            <li class="aboutUs__item">ЖелДорЭкспедиция</li>
+          <b class="about-us__title">КОМПАНИЯ «Техномарт»</b>
+          <p class="about-us__description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="about-us__description about-us__description--second">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
+          <ul class="about-us__list">
+            <li class="about-us__item">Деловые линии</li>
+            <li class="about-us__item">Автотрейдинг</li>
+            <li class="about-us__item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="aboutUs__button button" href="#">Подробнее о компании</a>
+          <a class="about-us__button button" href="#">Подробнее о компании</a>
         </section>
 
         <section class="contacts">
@@ -305,10 +305,10 @@
             <a class="menu__logo menu__logo--footer button" href="index.html">
               <img src="img/logo-technomart.svg" width="137" height="21" alt="Логотип: Техномарт">
             </a>
-            <p class="footer-top__contacts">
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-              +7 (812) 555-05-55
-            </p>
+            <div class="footer-top__contacts">
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              <p>+7 (812) 555-05-55</p>
+            </div>
           </div>
 
           <ul class="footer-top__nav nav">
@@ -345,11 +345,9 @@
 
       <div class="container-foter-bottom">
         <div class="footer__footer-bottom footer-bottom">
-          <div class="footer-bottom__rights rights">
-            <p class="rights__protection">
-              © 2010–2019 Компания «Техномарт»<br>
-              Все права защищены
-            </p>
+          <div class="footer-bottom__rights">
+            <p>© 2010–2019 Компания «Техномарт»</p>
+            <p>Все права защищены</p>
           </div>
 
           <div class="footer-bottom__social social">
