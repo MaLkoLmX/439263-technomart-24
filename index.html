@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
@@ -103,25 +104,34 @@
             </div>
 
             <div class="offers__slider slider">
-              <a class="left slider__toggle" href="#slide-1"></a>
-              <a class="right slider__toggle" href="#slide-2"></a>
-              <section class="offers__item slides drills" id="slide-1">
-                <div class="drills__wrapper">
-                  <h3 class="offers__title slider__title">Дрели</h3>
-                  <p class="slider__description">Соседям на радость!</p>
-                </div>
-                <img class="offers__item-img" src="img/drills.jpg" width="620" height="266" alt="Изображение дрели">
-                <a class="slider__button button" href="catalog.html">Открыть каталог</a>
-              </section>
+              <a class="left slider__arrow" href="#slide-1"></a>
+              <a class="right slider__arrow" href="#slide-2"></a>
+              <input class="slider__toggle slider__toggle--first" type="radio" id="btn-1" name="toggle">
+              <input class="slider__toggle slider__toggle--second" type="radio" id="btn-2" name="toggle" checked>
+              <div class="slider__controls">
+                <label class="slider__control slider__control--first" for="btn-1"></label>
+                <label class="slider__control slider__control--second" for="btn-2"></label>
+              </div>
 
-              <section class="offers__item slides perforators" id="slide-2">
-                <div class="perforators__wrapper">
-                  <h3 class="offers__title slider__title">Перфораторы</h3>
-                  <p class="slider__description">Настоящие мужские игрушки</p>
-                </div>
-                <img class="offers__item-img" src="img/perforators.jpg" width="620" height="266" alt="Изображение перфоратора">
-                <a class="slider__button button" href="catalog.html">Открыть каталог</a>
-              </section>
+              <div class="slides">
+                <section class="offers__item slide slides-perforators" id="slide-1">
+                  <div class="perforators__wrapper">
+                    <h3 class="offers__title slider__title">Перфораторы</h3>
+                    <p class="slider__description">Настоящие мужские игрушки</p>
+                  </div>
+                  <img class="offers__item-img" src="img/perforators.jpg" width="620" height="266" alt="Изображение перфоратора">
+                  <a class="slider__button button" href="catalog.html">Открыть каталог</a>
+                </section>
+
+                <section class="offers__item slide slides-drills" id="slide-2">
+                  <div class="drills__wrapper">
+                    <h3 class="offers__title slider__title">Дрели</h3>
+                    <p class="slider__description">Соседям на радость!</p>
+                  </div>
+                  <img class="offers__item-img" src="img/drills.jpg" width="620" height="266" alt="Изображение дрели">
+                  <a class="slider__button button" href="catalog.html">Открыть каталог</a>
+                </section>
+              </div>
             </div>
           </div>
 
@@ -153,35 +163,51 @@
         <ul class="products__list">
           <li class="products__item">
             <a class="products__cart" href="#">
-              <h3 class="products__item-title">Перфоратор BOSH BFG 9000</h3>
+              <h3 class="products__item-title">Перфоратор BOSCH BFG 9000</h3>
               <p class="products__price">32500 Р.</p>
               <b class="products__discounts">25500 Р.</b>
-              <img class="products__img" src="img/Perforator-9000.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 9000">
+              <img class="products__img" src="img/perforator-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
             </a>
+            <div class="products__pointed pointed">
+              <a class="products-button pointed__button" href="#">Купить</a>
+              <a class="products-bookmark pointed__button" href="#">В закладки</a>
+            </div>
           </li>
           <li class="products__item">
             <a class="products__cart" href="#">
-              <h3 class="products__item-title">Перфоратор BOSH BFG 3000</h3>
+              <h3 class="products__item-title">Перфоратор BOSCH BFG 3000</h3>
               <p class="products__price">22500 Р.</p>
               <b class="products__discounts">15500 Р.</b>
-              <img class="products__img" src="img/Perforator-3000.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 3000">
+              <img class="products__img" src="img/perforator-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             </a>
+            <div class="products__pointed pointed">
+              <a class="products-button pointed__button" href="#">Купить</a>
+              <a class="products-bookmark pointed__button" href="#">В закладки</a>
+            </div>
           </li>
           <li class="products__item">
             <a class="products__cart" href="#">
-              <h3 class="products__item-title">Перфоратор BOSH BFG 6000</h3>
+              <h3 class="products__item-title">Перфоратор BOSCH BFG 6000</h3>
               <p class="products__price">30500 Р.</p>
               <b class="products__discounts">25500 Р.</b>
-              <img class="products__img" src="img/Perforator-6000.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 6000">
+              <img class="products__img" src="img/perforator-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             </a>
+            <div class="products__pointed pointed">
+              <a class="products-button pointed__button" href="#">Купить</a>
+              <a class="products-bookmark pointed__button" href="#">В закладки</a>
+            </div>
           </li>
           <li class="products__item products--flag flag">
             <a class="products__cart" href="#">
-              <h3 class="products__item-title">Перфоратор BOSH BFG 2000</h3>
+              <h3 class="products__item-title">Перфоратор BOSCH BFG 2000</h3>
               <p class="products__price products__price--without"> </p>
               <b class="products__discounts">12500 Р.</b>
-              <img class="products__img" src="img/Perforator-3000.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 2000">
+              <img class="products__img" src="img/perforator-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </a>
+            <div class="products__pointed pointed">
+              <a class="products-button pointed__button" href="#">Купить</a>
+              <a class="products-bookmark pointed__button" href="#">В закладки</a>
+            </div>
           </li>
         </ul>
       </section>
@@ -200,37 +226,37 @@
           </li>
           <li class="manufacturers__item">
             <a class="manufacturers__cart" href="#">
-              <img src="img/Makita.png" width="123" height="40" alt="Makita">
+              <img src="img/makita.png" width="123" height="40" alt="Makita">
             </a>
           </li>
           <li class="manufacturers__item">
             <a class="manufacturers__cart" href="#">
-              <img src="img/DeWALT.png" width="146" height="44" alt="DeWalt">
+              <img class="manufacturers__dewalt" src="img/dewalt.png" width="146" height="44" alt="DeWalt">
             </a>
           </li>
           <li class="manufacturers__item">
             <a class="manufacturers__cart" href="#">
-              <img src="img/interskol.png" width="200" height="88" alt="Интерскол">
+              <img class="manufacturers__interskol" src="img/interskol.png" width="200" height="88" alt="Интерскол">
             </a>
           </li>
           <li class="manufacturers__item">
             <a class="manufacturers__cart" href="#">
-              <img src="img/Hitachi.png" width="169" height="31" alt="Hitachi">
+              <img class="manufacturers__hitachi" src="img/hitachi.png" width="169" height="31" alt="Hitachi">
             </a>
           </li>
           <li class="manufacturers__item">
             <a class="manufacturers__cart" href="#">
-              <img src="img/LG.png" width="121" height="73" alt="LG">
+              <img src="img/lg.png" width="121" height="73" alt="LG">
             </a>
           </li>
           <li class="manufacturers__item">
             <a class="manufacturers__cart" href="#">
-              <img src="img/AEG.png" width="151" height="96" alt="AEG">
+              <img src="img/aeg.png" width="151" height="96" alt="AEG">
             </a>
           </li>
           <li class="manufacturers__item">
             <a class="manufacturers__cart" href="#">
-              <img src="img/Metabo.png" width="204" height="69" alt="Metabo">
+              <img class="manufacturers__metabo" src="img/metabo.png" width="204" height="69" alt="Metabo">
             </a>
           </li>
         </ul>
@@ -278,7 +304,7 @@
           <h2 class="visually-hidden">О нас:</h2>
           <b class="about-us__title">КОМПАНИЯ «Техномарт»</b>
           <p class="about-us__description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p class="about-us__description about-us__description--second">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
+          <p class="about-us__description about-us__description--second">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
           <ul class="about-us__list">
             <li class="about-us__item">Деловые линии</li>
             <li class="about-us__item">Автотрейдинг</li>
@@ -334,7 +360,7 @@
               <a class="nav__link nav__link--yellow" href="equipment.html">Техника</a>
             </li>
             <li>
-              <a class="nav__link nav__link--yellow" href="instruments.html">Инструменты</a>
+              <a class="nav__link nav__link--yellow" href="instruments.html">Инструмент</a>
             </li>
             <li>
               <a class="nav__link nav__link--yellow" href="specialOffers.html">Спецпредложения</a>
@@ -387,7 +413,7 @@
             </div>
             <div class="copyright__wrapper">
               <p class="copyright__description">Разработано -</p>
-              <a class="copyright__link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </div>
           </div>
         </div>
@@ -427,6 +453,17 @@
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.396461306528!2d30.323083!3d59.938794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1551118145960" width="940" height="446" style="border:0" allowfullscreen></iframe>
         <button class="modal__map-close button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </section>
+
+    <section class="modal-add add">
+      <div class="add__actions">
+        <h3 class="add__title">Товар добавлен в корзину!</h3>
+      </div>
+      <div class="add__wrapper">
+          <a class="add__button button" href="#">Оформить заказ</a>
+          <a class="add__button add__button--current button" href="#">Продолжить покупки</a>
+        </div>
+      <button class="add__close button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
     <script src="js/scripts.min.js"></script>
