@@ -213,30 +213,38 @@ img {
   border: none;
 }
 
-.menu__search:hover {
+.menu input:hover {
   background-color: #212a3a;
 
   background-image: url("../img/icon-search--hover.svg");
 }
 
-.menu__search:focus {
+.menu input:focus {
   background-color: #ffffff;
   background-image: url("../img/icon-search--active.svg");
 }
 
-.menu__search::-webkit-input-placeholder {
+.menu input::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.menu__search:-ms-input-placeholder {
+.menu input:-ms-input-placeholder {
   color: #ffffff;
 }
 
-.menu__search::-ms-input-placeholder {
+.menu input::-ms-input-placeholder {
   color: #ffffff;
 }
 
-.menu__search::placeholder {
+.menu input:-moz-placeholder {
+   color: #ffffff;
+}
+
+.menu input::-moz-p {
+   color: #ffffff;
+}
+
+.menu input::placeholder {
   color: #ffffff;
 }
 
