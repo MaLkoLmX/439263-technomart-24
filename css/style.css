@@ -188,7 +188,8 @@ img {
 }
 
 .menu__item--basket {
-  padding-left: 44px;
+  padding-left: 46px;
+  padding-right: 27px;
 
   background-color: #ee3643;
   background-image: url("../img/icon-basket--catalog.svg");
@@ -224,27 +225,19 @@ img {
   background-image: url("../img/icon-search--active.svg");
 }
 
-.menu input::-webkit-input-placeholder {
+.menu__search::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.menu input:-ms-input-placeholder {
+.menu__search:-ms-input-placeholder {
   color: #ffffff;
 }
 
-.menu input::-ms-input-placeholder {
+.menu__search::-ms-input-placeholder {
   color: #ffffff;
 }
 
-.menu input:-moz-placeholder {
-   color: #ffffff;
-}
-
-.menu input::-moz-p {
-   color: #ffffff;
-}
-
-.menu input::placeholder {
+.menu__search::placeholder {
   color: #ffffff;
 }
 
@@ -485,6 +478,7 @@ img {
           justify-content: space-between;
   margin: 0;
   padding: 0 26px;
+  padding-right: 30px;
 
   list-style: none;
   -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
@@ -1063,7 +1057,7 @@ img {
 .slider-service__kinds {
   display: none;
   padding-bottom: 100px;
-  width: 639px;
+  width: 628px;
 
   background-repeat: no-repeat;
   background-position: 150px 23px;
@@ -1384,7 +1378,7 @@ img {
 }
 
 .container-foter-bottom {
-  padding: 36px 0;
+  padding: 34px 0;
   background-color: #293449;
 }
 
@@ -1453,7 +1447,7 @@ img {
 }
 
 .copyright__wrapper {
-  margin-left: 51px;
+  margin-left: 53px;
 }
 
 .copyright__wrapper:nth-child(1) {
@@ -1696,6 +1690,7 @@ img {
 }
 
 .filters__field {
+  margin: 0;
   margin-bottom: 16px;
   padding: 0;
 
@@ -1704,15 +1699,16 @@ img {
 }
 
 .filters__field--nutrition {
-  margin-bottom: 61px;
+  margin-bottom: 57px;
 
   border: none;
 }
 
 .filters__list {
   padding: 0;
-  padding-left: 33px;
+  padding-left: 34px;
   margin: 0;
+  margin-bottom: 18px;
 
   list-style: none;
 }
@@ -1735,7 +1731,7 @@ img {
   position: absolute;
   width: 23px;
   height: 23px;
-  margin-left: -35px;
+  margin-left: -34px;
 
   background-image: url("../img/icon-checkbox-off.svg");
 }
@@ -1822,7 +1818,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: auto;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   background-color: #f7f3ec;
 }
@@ -2136,6 +2132,7 @@ img {
   color: #000000;
   text-transform: uppercase;
   font-weight: normal;
+  letter-spacing: 0.15px;
 }
 
 .about-perforators__description {
@@ -2145,7 +2142,7 @@ img {
   font-size: 13px;
   line-height: 24px;
 
-  letter-spacing: 0.11px;
+  letter-spacing: 0.02px;
 }
 
 .modal__form {
@@ -2289,6 +2286,7 @@ img {
   border: none;
 
   cursor: pointer;
+  z-index: 5;
 }
 
 .modal__map {
@@ -2304,6 +2302,17 @@ img {
   background-color: transparent;
 
   z-index: 30;
+}
+.modal__map-img {
+  position: absolute;
+  display: block;
+  top: 0;
+
+  z-index: 3;
+}
+
+.modal__map-img--js {
+  display: none;
 }
 
 .modal-add {

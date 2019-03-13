@@ -3,6 +3,7 @@ var add = document.querySelector(".modal-add");
 var addClose = document.querySelector(".add__close");
 
 var mapLink = document.querySelector(".contacts__map-modal");
+var mapNoJs = document.querySelector(".modal__map-img");
 
 var link = document.querySelector(".contacts__button");
 
@@ -52,6 +53,12 @@ if (mapLink) {
       }
     }
   });
+}
+
+if (mapNoJs) {
+  if (mapNoJs.classList.contains("modal__map-img")) {
+    mapNoJs.classList.add("modal__map-img--js");
+  }
 }
 
 if (link) {
