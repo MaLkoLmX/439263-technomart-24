@@ -691,7 +691,7 @@ img {
 }
 
 .right {
-  right: 25px;
+  right: 20px;
 
   background-image: url("../img/icon-right.svg");
 }
@@ -749,6 +749,7 @@ img {
 }
 
 .popular-title {
+  max-width: 530px;
   margin: 30px 30px;
 
   font-size: 30px;
@@ -761,21 +762,16 @@ img {
 .products__button,
 .manufacturers__button {
   margin: auto 24px;
+  margin-left: auto;
   min-width: 253px;
   height: 18px;
 }
 
-.manufacturers__button {
-  margin-left: 200px;
-}
-
-.products__wrapper {
+.products__wrapper,
+.manufacturers__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
@@ -913,20 +909,6 @@ img {
 
 .manufacturers {
   margin-bottom: 66px;
-}
-
-.manufacturers__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  width: 940px;
-
-  background-color: #f9f5f0;
 }
 
 .manufacturers__list {
@@ -1761,6 +1743,12 @@ img {
   opacity: 0.3;
 }
 
+.label-checkbox--disabled,
+.label-radio--disabled {
+  color: rgba(0, 0, 0, 0.4);
+  cursor: default;
+}
+
 .radio {
   position: absolute;
   width: 25px;
@@ -1876,6 +1864,12 @@ img {
   text-decoration: none;
 
   border-bottom: 1px dotted #ee3643;
+}
+
+.sorting__link--current {
+  color: #ee3643;
+
+  border: none;
 }
 
 .sorting__link--arrow {
@@ -2000,23 +1994,23 @@ img {
   cursor: pointer;
 }
 
-.catalog-button,
-.products-button {
+.catalog__buy,
+.products__buy {
   background-image: url(../img/icon-add-basket.svg);
   background-repeat: no-repeat;
   background-position: 15px 12px;
 }
 
-.catalog-button:focus,
-.catalog-button:hover,
-.products-button:focus,
-.products-button:hover {
+.catalog__buy:focus,
+.catalog__buy:hover,
+.products__buy:focus,
+.products__buy:hover {
   background-color: #5fbb2d;
   background-image: url(../img/icon-add-basket--hover.svg);
 }
 
-.catalog-button:active,
-.products-button:active {
+.catalog__buy:active,
+.products__buy:active {
   background-color: #518534;
   background-image: url(../img/icon-add-basket--active.svg);
 
@@ -2035,8 +2029,8 @@ img {
           order: -1;
 }
 
-.catalog-bookmark,
-.products-bookmark {
+.catalog__bookmark,
+.products__bookmark {
   width: 130px;
   margin: 0 auto;
   margin-top: 7px;
@@ -2052,20 +2046,20 @@ img {
           box-shadow: none;
 }
 
-.catalog-bookmark:focus,
-.catalog-bookmark:hover,
-.products-bookmark:focus,
-.products-bookmark:hover {
+.catalog__bookmark:focus,
+.catalog__bookmark:hover,
+.products__bookmark:focus,
+.products__bookmark:hover {
   border-color: #32425c;
 
   background-color: #ffffff;
 }
 
-.catalog-bookmark:active,
-.products-bookmark:active {
-  color: #d0d2d6;
+.catalog__bookmark:active,
+.products__bookmark:active {
+  border-color: #32425c;
 
-  border-color: #c1c6ce;
+  opacity: 0.3;
 }
 
 .catalog__pagination {
@@ -2212,28 +2206,28 @@ img {
 }
 
 .modal__form-field input::-webkit-input-placeholder {
-  font-family: "PT Sans", "Cuprum", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
 }
 
 .modal__form-field input:-ms-input-placeholder {
-  font-family: "PT Sans", "Cuprum", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
 }
 
 .modal__form-field input::-ms-input-placeholder {
-  font-family: "PT Sans", "Cuprum", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
 }
 
 .modal__form-field input::placeholder {
-  font-family: "PT Sans", "Cuprum", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;

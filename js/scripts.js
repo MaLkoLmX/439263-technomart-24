@@ -1,4 +1,4 @@
-var addItem = document.querySelectorAll(".pointed__button");
+var addItem = document.querySelectorAll(".pointed__button--buy");
 var add = document.querySelector(".modal-add");
 var addClose = document.querySelector(".add__close");
 
@@ -10,12 +10,12 @@ var link = document.querySelector(".contacts__button");
 var isStorageSupport = true;
 var storage = "";
 
-addItem.forEach(function(addItem) {
-  addItem.addEventListener("click", function (evt) {
+for (var i = 0; i < addItem.length; i++) {
+  addItem[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     add.classList.add("modal__show");
   });
-});
+}
 
 addClose.addEventListener("click", function (evt) {
   evt.preventDefault();
